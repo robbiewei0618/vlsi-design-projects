@@ -1,0 +1,209 @@
+##########################################################
+# TSMC iCellmap
+# Spec. version : v0.4
+# PDK Doc. No.  : 
+# Create Date   : Thu Oct 14 13:38:33 2021
+##########################################################
+- model: dnwpsub
+  cellview: { lib: tsmcN16, cell: dnwpsub, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1" }
+
+- model: nch_18_mac
+  cellview: { lib: tsmcN16, cell: nch_18_mac, view: ivpcell }
+  pin: { D: D, G: G, S: S, B: B }
+  pmExclude: { fingers: "1", m: "1", multi: "1", simM: "1" }
+
+- model: nch_lvt_mac
+  cellview: { lib: tsmcN16, cell: nch_lvt_mac, view: ivpcell }
+  pin: { D: D, G: G, S: S, B: B }
+  pmExclude: { fingers: "1", m: "1", multi: "1", simM: "1" }
+
+- model: nch_mpodelvt_mac
+  cellview: { lib: tsmcN16, cell: nch_mpodelvt_mac, view: ivpcell }
+  pin: { D: D, G: G, S: S, B: B }
+  pmExclude: { fingers: "1", m: "1", multi: "1", simM: "1" }
+
+- model: nch_mpodesvt_mac
+  cellview: { lib: tsmcN16, cell: nch_mpodesvt_mac, view: ivpcell }
+  pin: { D: D, G: G, S: S, B: B }
+  pmExclude: { fingers: "1", m: "1", multi: "1", simM: "1" }
+
+- model: nch_svt_mac
+  cellview: { lib: tsmcN16, cell: nch_svt_mac, view: ivpcell }
+  pin: { D: D, G: G, S: S, B: B }
+  pmExclude: { fingers: "1", m: "1", multi: "1", simM: "1" }
+
+- model: ndio_18_mac
+  cellview: { lib: tsmcN16, cell: ndio_18_mac, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1", simM: "1", total_m: "1" }
+
+- model: ndio_mac
+  cellview: { lib: tsmcN16, cell: ndio_mac, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1", simM: "1", total_m: "1" }
+
+- model: nmoscap_18
+  cellview: { lib: tsmcN16, cell: nmoscap_18, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { fingers: "1", m: "1", multi: "1", totalM: "1" }
+
+- model: npode_18_mac
+  cellview: { lib: tsmcN16, cell: npode_18_mac, view: ivpcell }
+  pin: { S: S, G: G, B: B }
+  pmExclude: { m: "1", simM: "1" }
+
+- model: npode_lvt_mac
+  cellview: { lib: tsmcN16, cell: npode_lvt_mac, view: ivpcell }
+  pin: { S: S, G: G, B: B }
+  pmExclude: { m: "1", simM: "1" }
+
+- model: npode_svt_mac
+  cellview: { lib: tsmcN16, cell: npode_svt_mac, view: ivpcell }
+  pin: { S: S, G: G, B: B }
+  pmExclude: { m: "1", simM: "1" }
+
+- model: nwdio
+  cellview: { lib: tsmcN16, cell: nwdio, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1", simM: "1", total_m: "1" }
+
+- model: pch_18_mac
+  cellview: { lib: tsmcN16, cell: pch_18_mac, view: ivpcell }
+  pin: { D: D, G: G, S: S, B: B }
+  pmExclude: { fingers: "1", m: "1", multi: "1", simM: "1" }
+
+- model: pch_lvt_mac
+  cellview: { lib: tsmcN16, cell: pch_lvt_mac, view: ivpcell }
+  pin: { D: D, G: G, S: S, B: B }
+  pmExclude: { fingers: "1", m: "1", multi: "1", simM: "1" }
+
+- model: pch_mpodelvt_mac
+  cellview: { lib: tsmcN16, cell: pch_mpodelvt_mac, view: ivpcell }
+  pin: { D: D, G: G, S: S, B: B }
+  pmExclude: { fingers: "1", m: "1", multi: "1", simM: "1" }
+
+- model: pch_mpodesvt_mac
+  cellview: { lib: tsmcN16, cell: pch_mpodesvt_mac, view: ivpcell }
+  pin: { D: D, G: G, S: S, B: B }
+  pmExclude: { fingers: "1", m: "1", multi: "1", simM: "1" }
+
+- model: pch_svt_mac
+  cellview: { lib: tsmcN16, cell: pch_svt_mac, view: ivpcell }
+  pin: { D: D, G: G, S: S, B: B }
+  pmExclude: { fingers: "1", m: "1", multi: "1", simM: "1" }
+
+- model: pdio_18_mac
+  cellview: { lib: tsmcN16, cell: pdio_18_mac, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1", simM: "1", total_m: "1" }
+
+- model: pdio_mac
+  cellview: { lib: tsmcN16, cell: pdio_mac, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1", simM: "1", total_m: "1" }
+
+- model: pnp2_mac
+  cellview: { lib: tsmcN16, cell: pnp_mac, view: ivpcell }
+  pin: { C: C, B: B, E: E }
+  pmExclude: { m: "1" }
+
+- model: ppode_18_mac
+  cellview: { lib: tsmcN16, cell: ppode_18_mac, view: ivpcell }
+  pin: { S: S, G: G, B: B }
+  pmExclude: { m: "1", simM: "1" }
+
+- model: ppode_lvt_mac
+  cellview: { lib: tsmcN16, cell: ppode_lvt_mac, view: ivpcell }
+  pin: { S: S, G: G, B: B }
+  pmExclude: { m: "1", simM: "1" }
+
+- model: ppode_svt_mac
+  cellview: { lib: tsmcN16, cell: ppode_svt_mac, view: ivpcell }
+  pin: { S: S, G: G, B: B }
+  pmExclude: { m: "1", simM: "1" }
+
+- model: pwdnw
+  cellview: { lib: tsmcN16, cell: pwdnw, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1" }
+
+- model: rhim
+  cellview: { lib: tsmcN16, cell: rhim, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1", prl: "1", segments: "1" }
+
+- model: rm1w
+  cellview: { lib: tsmcN16, cell: rm1w, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1" }
+
+- model: rmap
+  cellview: { lib: tsmcN16, cell: rmap, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1" }
+
+- model: rmrw
+  cellview: { lib: tsmcN16, cell: rm8r, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1" }
+
+- model: rmxaw
+  cellview: { lib: tsmcN16, cell: rm2xa, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1" }
+
+- model: rmxdw
+  cellview: { lib: tsmcN16, cell: rm3xd_h, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1" }
+
+- model: rmxew
+  cellview: { lib: tsmcN16, cell: rm4xe_h, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1" }
+
+- model: rmyw
+  cellview: { lib: tsmcN16, cell: rm7y, view: ivpcell }
+  pin: { PLUS: PLUS, MINUS: MINUS }
+  pmExclude: { m: "1" }
+
+
+- model: cap
+  cellview: { lib: analogLib, cell: cap, view: symbol }
+  pin: {  PLUS: PLUS, MINUS: MINUS }
+
+- model: ind
+  cellview: { lib: analogLib, cell: ind, view: symbol }
+  pin: {  PLUS: PLUS, MINUS: MINUS }
+
+- model: res
+  cellview: { lib: analogLib, cell: res, view: symbol }
+  pin: {  PLUS: PLUS, MINUS: MINUS }
+
+- model: pcap
+  cellview: { lib: analogLib, cell: cap, view: symbol }
+  pin: {  PLUS: PLUS, MINUS: MINUS }
+
+- model: pind
+  cellview: { lib: analogLib, cell: ind, view: symbol }
+  pin: {  PLUS: PLUS, MINUS: MINUS }
+
+- model: pres
+  cellview: { lib: analogLib, cell: res, view: symbol }
+  pin: {  PLUS: PLUS, MINUS: MINUS }
+
+- model: c
+  cellview: { lib: analogLib, cell: cap, view: symbol }
+  pin: {  PLUS: PLUS, MINUS: MINUS }
+
+- model: l
+  cellview: { lib: analogLib, cell: ind, view: symbol }
+  pin: {  PLUS: PLUS, MINUS: MINUS }
+
+- model: r
+  cellview: { lib: analogLib, cell: res, view: symbol }
+  pin: {  PLUS: PLUS, MINUS: MINUS }
+
+

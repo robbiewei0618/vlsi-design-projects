@@ -1,0 +1,79 @@
+*///////////////////////////////////////////////////////////////////////// 
+*//// 
+*////                      TSMC CONFIDENTIAL 
+*//// 
+*///////////////////////////////////////////////////////////////////////// 
+* SPICE NETLIST
+***************************************
+.SUBCKT ndio_18_mac PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT ndio_mac PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT nmoscap_18 PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT npode_18_mac S G B
+.ENDS
+***************************************
+.SUBCKT npode_lvt_mac S G B
+.ENDS
+***************************************
+.SUBCKT npode_svt_mac S G B
+.ENDS
+***************************************
+.SUBCKT pdio_18_mac PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT pdio_mac PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT ppode_18_mac S G B
+.ENDS
+***************************************
+.SUBCKT ppode_lvt_mac S G B
+.ENDS
+***************************************
+.SUBCKT ppode_svt_mac S G B
+.ENDS
+***************************************
+.SUBCKT rhim PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rm10w PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rm11w PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rm1w PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rm2w PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rm3w PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rm4w PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rm5w PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rm6w PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rm7w PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rm8w PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rm9w PLUS MINUS
+.ENDS
+***************************************
+.SUBCKT rmap PLUS MINUS
+.ENDS
+***************************************

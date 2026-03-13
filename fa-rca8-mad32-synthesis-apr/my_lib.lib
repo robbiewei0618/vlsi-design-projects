@@ -1,0 +1,210 @@
+library(my_lib) {
+
+    /* 
+	CIC 0.18um processes my library
+	supplied with Synopysis tools to contain the cells for the
+	Nano class standard cell library.
+    */
+
+    /* unit attributes */
+    time_unit 				: "1ns";
+    voltage_unit			: "1V";
+    current_unit 			: "1mA";
+    pulling_resistance_unit : "1kohm";
+    leakage_power_unit 		: "1pW";
+    capacitive_load_unit 	  (1.0,pf);
+
+    /* operation conditions */
+    nom_process     : 1;
+    nom_temperature : 25;
+    nom_voltage     : 1.8;
+
+	/* additional header data */
+    default_fanout_load            	: 1;
+    default_inout_pin_cap          	: 0.005;
+    default_input_pin_cap          	: 0.005;
+    default_output_pin_cap         	: 0.0;
+    default_max_transition         	: 3.0;
+
+    /* default attributes */
+    default_leakage_power_density  	: 0.0;
+    default_cell_leakage_power     	: 0.0;
+    slew_derate_from_library       	: 0.5;
+    slew_lower_threshold_pct_fall  	: 10.000;
+    slew_upper_threshold_pct_fall  	: 90.000;
+    slew_lower_threshold_pct_rise  	: 10.000;
+    slew_upper_threshold_pct_rise  	: 90.000;
+    input_threshold_pct_fall       	: 50.000;
+    input_threshold_pct_rise       	: 50.000;
+    output_threshold_pct_fall      	: 50.000;
+    output_threshold_pct_rise      	: 50.000;
+
+	/* default timing specify */
+	default_output_pin_rise_res		: 0.0;
+	default_inout_pin_fall_res		: 0.0;
+	default_inout_pin_rise_res		: 0.0;
+	default_slope_rise				: 0.0;
+	default_output_pin_fall_res		: 0.0;
+	default_intrinsic_rise			: 0.0;
+	default_slope_fall				: 0.0;
+	default_intrinsic_fall			: 0.0;
+
+cell(INV_X1) {
+  area : 9.972;
+  pin(in) {
+    direction : input;
+    capacitance : 0.0011;
+  }
+  pin(out) {
+    direction : output;
+    function : "!in";
+    timing() {
+      intrinsic_rise : 0.0225;
+      intrinsic_fall : 0.0178;
+      rise_resistance : 7.1926;
+      fall_resistance : 5.2260;
+      related_pin : "in";
+    }
+  }
+}
+
+cell(INV_X2) {
+  area : 9.972;
+  pin(in) {
+    direction : input;
+    capacitance : 0.0022;
+  }
+  pin(out) {
+    direction : output;
+    function : "!in";
+    timing() {
+      intrinsic_rise : 0.0197;
+      intrinsic_fall : 0.0168;
+      rise_resistance : 3.8247;
+      fall_resistance : 2.8187;
+      related_pin : "in";
+    }
+  }
+}
+
+cell(NAND_X1) {
+  area : 13.3056;
+  pin(A) {
+    direction : input;
+    capacitance : 0.0011;
+  }
+  pin(B) {
+    direction : input;
+    capacitance : 0.0011;
+  }
+  pin(out) {
+    direction : output;
+    function : "!(A&B)";
+    timing() {
+      intrinsic_rise : 0.04049;
+      intrinsic_fall : 0.02377;
+      rise_resistance : 7.2095;
+      fall_resistance : 4.1541;
+      related_pin : "A";
+    }
+    timing() {
+      intrinsic_rise : 0.0284;
+      intrinsic_fall : 0.0185;
+      rise_resistance : 7.2685;
+      fall_resistance : 4.3273;
+      related_pin : "B";
+    }
+  }
+}
+
+cell(NAND_X2) {
+  area : 16.632;
+  pin(A) {
+    direction : input;
+    capacitance : 0.0022;
+  }
+  pin(B) {
+    direction : input;
+    capacitance : 0.0022;
+  }
+  pin(out) {
+    direction : output;
+    function : "!(A&B)";
+    timing() {
+      intrinsic_rise : 0.03836;
+      intrinsic_fall : 0.02036;
+      rise_resistance : 3.8475;
+      fall_resistance : 2.2631;
+      related_pin : "A";
+    }
+    timing() {
+      intrinsic_rise : 0.0258;
+      intrinsic_fall : 0.0174;
+      rise_resistance : 3.9029;
+      fall_resistance : 2.2726;
+      related_pin : "B";
+    }
+  }
+}
+
+cell(NOR_X1) {
+  area : 16.632;
+  pin(A) {
+    direction : input;
+    capacitance : 0.0022;
+  }
+  pin(B) {
+    direction : input;
+    capacitance : 0.0022;
+  }
+  pin(out) {
+    direction : output;
+    function : "!(A|B)";
+    timing() {
+      intrinsic_rise : 0.0418;
+      intrinsic_fall : 0.0401;
+      rise_resistance : 7.5536;
+      fall_resistance : 5.3659;
+      related_pin : "A";
+    }
+    timing() {
+      intrinsic_rise : 0.0319;
+      intrinsic_fall : 0.0273;
+      rise_resistance : 7.5925;
+      fall_resistance : 5.2646;
+      related_pin : "B";
+    }
+  }
+}
+
+cell(NOR_X2) {
+  area : 16.632;
+  pin(A) {
+    direction : input;
+    capacitance : 0.0044;
+  }
+  pin(B) {
+    direction : input;
+    capacitance : 0.0044;
+  }
+  pin(out) {
+    direction : output;
+    function : "!(A|B)";
+    timing() {
+      intrinsic_rise : 0.0393;
+      intrinsic_fall : 0.0394;
+      rise_resistance : 3.7320;
+      fall_resistance : 2.9591;
+      related_pin : "A";
+    }
+    timing() {
+      intrinsic_rise : 0.0274;
+      intrinsic_fall : 0.0260;
+      rise_resistance : 3.5415;
+      fall_resistance : 3.2326;
+      related_pin : "B";
+    }
+  }
+}
+} /* End of library my_lib.lib */
+

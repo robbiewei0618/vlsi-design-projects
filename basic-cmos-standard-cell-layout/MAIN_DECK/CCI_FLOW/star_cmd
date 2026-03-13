@@ -1,0 +1,122 @@
+*///////////////////////////////////////////////////////////////////////// 
+*//// 
+*////                      TSMC CONFIDENTIAL 
+*//// 
+*///////////////////////////////////////////////////////////////////////// 
+* StarRCXT extraction options template, for customer reference only.
+
+*** Database options
+BLOCK: top_cellname
+
+*** Hercules flow
+* MILKYWAY_DATABASE: MILKYWAY_OUTPUT
+* MILKYWAY_EXTRACT_VIEW: YES
+
+*** CCI flow
+CALIBRE_RUNSET: 
+CALIBRE_QUERY_FILE: query_cmd
+
+*** Metal fill extraction 
+METAL_FILL_POLYGON_HANDLING: FLOATING
+* METAL_FILL_GDS_FILE: 
+* GDS_LAYER_MAP_FILE: 
+
+CASE_SENSITIVE: YES
+HIERARCHICAL_SEPARATOR: /
+
+*** RC Extraction options
+TCAD_GRD_FILE: ./clnxxg+_1p0xm+alrdl_typical.nxtgrd
+MAPPING_FILE:  ./starrcxt_mapping
+EXTRACTION: RC
+*** comment MODE when StarRC is 2017.12 or later
+MODE: 400
+
+REDUCTION: YES
+DENSITY_BASED_THICKNESS: YES
+* NETLIST_DEVICE_LOCATION_ORIENTATION : COMMENT
+
+*** For 90nm and below process
+EXTRACT_VIA_CAPS: YES
+*** For 0.13um and above process
+* EXTRACT_VIA_CAPS: NO
+ 
+*** DataBase Processing
+REMOVE_FLOATING_NETS: YES
+*** Keeps the PODE cap network
+REMOVE_DANGLING_NETS: YES
+*REMOVE_FLOATING_PORTS: YES
+POWER_NETS: VDD VSS
+SKIP_CELLS: !*
+
+TRANSLATE_RETAIN_BULK_LAYERS: CONLY
+ 
+*** Netlist options
+NETLIST_FORMAT: SPF
+NETLIST_PASSIVE_PARAMS: YES
+* NETLIST_FILE:
+* NETLIST_COMPRESS_COMMAND: gzip
+ 
+*** Coupling Caps options
+COUPLE_TO_GROUND: NO
+COUPLING_REPORT_FILE: cc.rep
+* COUPLING_ABS_THRESHOLD: 3e-15
+* COUPLING_REL_THRESHOLD: 0.03
+* COUPLING_REPORT_NUMBER: 1000
+ 
+*** Subcket Pin's order for Simulation
+* SPICE_SUBCKT_FILE: <user_define_file>
+ 
+* XREF options
+XREF: YES
+XREF_USE_LAYOUT_DEVICE_NAME: YES
+CELL_TYPE: LAYOUT
+NET_TYPE: LAYOUT
+
+*** For shrink flow
+* MAGNIFICATION_FACTOR : 0.9
+* MAGNIFY_DEVICE_PARAMS : NO
+
+*** For gate to diffusion coupling capacitance
+IGNORE_CAPACITANCE: DIFF
+
+
+*** Uncomment this line to extract resistor body capacitance
+EXTRACT_RES_BODY_COUPLING: YES
+CALIBRE_LVS_DEVICE_TYPE_RES: rhim rm10w rm11w rm1w rm2w rm3w rm4w rm5w rm6w rm7w rm8w rm9w rmap
+
+
+IGNORE_GATE_CHANNEL_CAPACITANCE:YES
+
+
+REMOVE_DIFFUSION_GATE_OVERLAP: YES
+
+
+TRANSLATE_FLOATING_AS_FILL:YES
+
+
+COUPLE_TO_PCELL_PINS: NO
+
+
+DENSITY_OUTSIDE_BLOCK: 0.5
+
+
+*** For distributed virtual VIA ***
+
+TRENCH_CONTACT_VIRTUAL_VIA_SEGMENTATION_RATIO: 1
+
+MAX_VIRTUAL_VIA_SEGMENTATION_NUMBER: 100
+
+*** For double pattern ***
+DPT: YES
+
+
+
+MULTIGATE_MODELS: YES
+*** Improve accuracy of SRAM and repeated layouts; transistor level extraction
+*** comment ANALOG_SYMMETRIC_NETS when StarRC is 2017.12 or later
+ANALOG_SYMMETRIC_NETS: YES
+
+
+CALIBRE_LVS_DEVICE_TYPE_MOS: npode_18_mac npode_lvt_mac npode_svt_mac ppode_18_mac ppode_lvt_mac ppode_svt_mac 
+CALIBRE_OPTIONAL_DEVICE_PIN_FILE: pin_file.txt
+

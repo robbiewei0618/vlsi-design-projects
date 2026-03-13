@@ -1,0 +1,59 @@
+///////////////////////////////////////////////////////////////////////// 
+//// 
+////                      TSMC CONFIDENTIAL 
+//// 
+///////////////////////////////////////////////////////////////////////// 
+//  mentorall_s license acquired (calsvrfencrypt requested).
+//  calsvrfencrypt authorized.
+// Calibre SVRFencrypt v2019.2_14.13
+// This rule file or portions thereof includes data that is encrypted.
+// Lines between the "#DECRYPT" and the "#ENDCRYPT" statements must not
+// be altered in any manner.  The encrypted data has not been parsed by
+// Mentor Graphics Corporation and Mentor Graphics cannot offer any
+// assurances as to the accuracy of the syntax.  Mentor Graphics does
+// not provide support for the encrypted portion of the rules file. This
+// is the sole responsibility of the providing organization and problems
+// encountered are to be reported to the provider. Support by Mentor
+// Graphics for an encrypted rules file requires the availability of the
+// original rules file.
+//
+// This rule file has not been verified using any Mentor Graphics software. 
+//
+// This deck was developed using Mentor Graphics proprietary SVRF and TVF
+// formats.  The deck is to be used only in Calibre tools.  For further
+// information about SVRF/TVF File Use Restrictions, please go to 
+// http://www.mentor.com/terms_conditions/svrf-tvf.html
+// LIMITATION OF LIABILITY: Mentor Graphics is not liable for any property
+// damage, personal injury, loss of profits, interruption of business, or for
+// any other special, consequential or incidental damages, however caused,
+// whether for breach of warranty, contract, tort (including negligence),
+// strict liability or otherwise. In no event shall Mentor Graphics'
+// liability exceed the amount paid for the product giving rise to the claim.
+
+// Calibre 
+// lod_measure
+
+#DECRYPT %%6~N0>J\QX:+V=4P^%/.Z^ES'I"\_&O("*?H^8^:"FT8=U!#C0_ABI6?Y:42SNMQ5PU<JQ!!"
+[$C(*7"7..W9A@79BJBF/1!!":#`LD;]5-7&;+)7C,['UN1!!"
+#)S'MY0I'!0.&-]GB^OF8Q!!":@CL*+8!<NQX06D5R&`RF12IB(].\^QXO]O9`=>SF$[/$HC4]C!K<>-V5>$D`U2X!
+UEW72=U=*8&&+CFQ=$-;8!!!"G2_-V@DEL85^\:;OLSP<HA[>=]#XD9?Q<I/NNH@`'_#7'P^;,+I]J+ZF1?3*8BNV!
+Z?=(S6XCB73O<EVWU`IV/A!!"Q!VSH8E76]?2-!6.,R;JTY&:D?;YCG"U6N3CD2:%`H75"F8*!)'W%0;`F1]RPT?X!
+V%]:OF#T5P,K`F<##Z2`MA!!"*R-6!_MY6CP4'4&,?[:EHA!!"
+2IO_Y]>5[DVZ&7VYI+SFO1!!"H='\G>SQO?EBW3_*(IMJ6+Q;@/=U5!NIS2>2\/G#B3`<)%KD<6P!!8'[E86Y&O?0O>G(!_M2#AP:+HRDU>B%SX>&TCB1(AD.>E0+Y\6@G!!!#
+(D['^5X#NK-472%O2J245!!!"&5@SX\][T>+Y?6J+5HV[B+)-YKJ+WHHSK*VD,N-CY]20W)R`">8ZKD0RQE1'5TWOA@+-^NJ2DP>3M%YN[%@/6A!!"
+%T6$-1N2'%P2K^,MTZ!-TA!!"`:LX>$A(,TS+X(<[BZ<'UJ@K!4[3?4[,1$U')8U+BE%!#
+'MRVS%F'7YH"'/@CC3>NF!!!"7*WKY:,;T)N>G(M\*Z%XR`@4Y#\ECU"MCFB-!IAH237##*;3*Y@$Y'.T1SH;L,R_XRV`T^^Z0+4HP37\%PY-DA!!"
+:^1HD/VZL?0EEAS/LT@[0!!!"SD@KK!=7PEL:P?_T9Z<94Q0;URAU^<IUMDWBM[A8_#U(W#4@H[58^UR2/?*&#9C7"17;)$30*IW?62T0IL(_?A!!"
+N3NMYG%?6),[?F75=E5C]Q!!"K1BNN3JFVYU!5"L6W-3I1WW\LKX/7$O;*&]D>J@4D-=K;=@E2$`'_8T]U6ZD0`6`!
+:0ZPSAVJ&]`*I@.V)X-DG1!!"%:I?E49)9;!CUEI8K86K*\NL=2&TJ_W2C?W3V^+5=%G?5\>#4[260S)S)<N;;<S#!
+9;7&<<J2^ZI7USK(.CO5_Q!!"?R5OM0:*@ZZ[!&[)R:914:\R4FJN`P5:=`?N!!_K&.&X-<3JI_M)6C6+>S<IUV["7JSP_,97Y)AUBDRB6GT%U!!!"
+5Q0:0@N$+O2;@*KGZJC9GA!!"!'#UB*FYWY!.ZSO'RF+$-=$/#(<JCD1HD45/S=+YFN81,U*$GU$QW4&QFT7WPTV]!
+8"@,3L>C`7SB6TN`EM)LD1!!",T'M^'*['\B!U.X'BJENW=AFT`;Q<O%*"MZN<*,,YZA5^$5QNA3^AQ,)I]RM-'ABSD5K3XS<-XG1,>#10YK(NQ!!"
+0H]/(L3I,FOX+T3&.JZV:A!!"=RIK<-5;J:T,[U<!J54IB^2BYFSZT=&43#YR#M%=YC($\["0!@[6\[Y7__[;SNTU!ND>OGSE_5EG5@_G@:K5>1!!"
+T%6*CW@)*\L;!\G5(1+)`!!!"*XTH_9P6OC+)Z(&54^'J(CO#=.W+T0[B6A2O)@@T0R5!#
+T#=D7@6E)G8?7W!@^ZW%.1!!"K'":CYEOQ%9S&F>?L/!4C!!!"
+?:!MQ"-QXTTND/P7BQ>ZZA!!"EW]N3O5#0RP%0I<0\SD*R<["&L(U#."*"P_0R32Q0U>A=7:32O@V**`11K$&26MOK=W7"V`BC7*`RUVBUGDFPSE>!`GZ&4(7V+JDA/:=PC]!#
+4T$C%[.:U+)F774CP"==P1!!"IR"GZ@L<[@T[Z?56=5H>?1!!"
+J``8O'CI_%@7WYR9?&3"AQ!!"1.V`VU]-Q%?@MTR(9*G1>A!!"
+I@9X@Y\:$L5Z\4&*T'S'[!!!"2AUC?%IEJ^T[_+KTYX>NT1!!"
+#ENDCRYPT

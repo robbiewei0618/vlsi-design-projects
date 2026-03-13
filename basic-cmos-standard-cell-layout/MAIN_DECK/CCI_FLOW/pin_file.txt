@@ -1,0 +1,6 @@
+M npode_18_mac         tndiff(S) ngate_18_pode3t(G)        psub(B)    KEEP_PIN_ORDER
+M npode_lvt_mac        tndiff(S) nlvgate_pode3t(G)         psub(B)    KEEP_PIN_ORDER
+M npode_svt_mac        tndiff(S) ngate_pode3t(G)           psub(B)    KEEP_PIN_ORDER
+M ppode_18_mac         tpdiff(S) pgate_18_pode3t(G)        nxwell(B)  KEEP_PIN_ORDER
+M ppode_lvt_mac        tpdiff(S) plvgate_pode3t(G)         nxwell(B)  KEEP_PIN_ORDER
+M ppode_svt_mac        tpdiff(S) pgate_pode3t(G)           nxwell(B)  KEEP_PIN_ORDER
