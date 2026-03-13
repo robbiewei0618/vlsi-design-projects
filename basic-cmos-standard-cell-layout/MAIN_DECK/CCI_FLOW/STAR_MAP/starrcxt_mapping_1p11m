@@ -1,0 +1,190 @@
+*///////////////////////////////////////////////////////////////////////// 
+*//// 
+*////                      TSMC CONFIDENTIAL 
+*//// 
+*///////////////////////////////////////////////////////////////////////// 
+conducting_layers
+
+******* General mapping *******
+AP                      AP              **** move to remove layer if no RDL layer in RC techfiles
+M1                      M1
+M2                      M2
+M3                      M3
+M4                      M4
+M5                      M5
+M6                      M6
+M7                      M7
+M8                      M8
+M9                      M9
+M10                      M10
+M11                      M11
+
+M0_OD_N                 M0_OD_N
+M0_OD_P                 M0_OD_P
+M0_STI                  M0_STI
+M0_PO                   M0_PO
+M0_PO_TiN               M0_PO_TiN
+
+tndiff                  NOD           RPSQ=0.0000001
+tndiff_dio              NOD           RPSQ=0.0000001
+tndiff_RC               NOD
+tpdiff                  POD           RPSQ=0.0000001
+tpdiff_dio              POD           RPSQ=0.0000001
+tpdiff_RC               POD
+tiod                    NOD
+
+n_fpoly_svt             n_fpoly_svt
+n_fpoly_lvt             n_fpoly_lvt
+n_fpoly_io              n_fpoly_io
+
+p_fpoly_svt             p_fpoly_svt
+p_fpoly_lvt             p_fpoly_lvt
+p_fpoly_io              p_fpoly_io
+
+n_gpoly_svt             n_gpoly_svt
+n_gpoly_lvt             n_gpoly_lvt
+n_gpoly_nocg_lvt        n_gpoly_lvt
+n_gpoly_io              n_gpoly_io
+n_gpoly_nocg_io         n_gpoly_io
+p_gpoly_svt             p_gpoly_svt
+p_gpoly_lvt             p_gpoly_lvt
+p_gpoly_nocg_lvt        p_gpoly_lvt
+p_gpoly_io              p_gpoly_io
+p_gpoly_nocg_io         p_gpoly_io
+
+psub                    SUBSTRATE       precedence = 1
+nxwell                  SUBSTRATE       precedence = 2
+DNW                     SUBSTRATE
+psub_term               SUBSTRATE     **** move  to remove layer if VARIABLE STRING extract_dnwpsub = "no"  
+dnwc                    SUBSTRATE
+
+******* MOS mapping *******
+ngate_mac               n_gpoly_svt 
+nlvgate_mac             n_gpoly_lvt
+nrgate_mac              n_gpoly_svt
+n1lvgate_mac            n_gpoly_lvt
+
+ngate_18_mac            n_gpoly_io
+dngate_18_mac           n_gpoly_io
+
+pgate_mac               p_gpoly_svt 
+plvgate_mac             p_gpoly_lvt
+pgate_18_mac            p_gpoly_io
+
+******* PODE mapping *******
+** 3T PODE
+ngate_pode3t           n_gpoly_svt
+nlvgate_pode3t         n_gpoly_lvt
+ngate_18_pode3t        n_gpoly_io
+
+pgate_pode3t           p_gpoly_svt
+plvgate_pode3t         p_gpoly_lvt
+pgate_18_pode3t        p_gpoly_io
+
+ngate_mpode_mac        n_gpoly_svt
+nlvgate_mpode_mac      n_gpoly_lvt
+
+pgate_mpode_mac        p_gpoly_svt
+plvgate_mpode_mac      p_gpoly_lvt
+
+******* VARACTOR mapping *******
+vargt_18               n_gpoly_io
+******* BJT mapping *******
+coll1                   SUBSTRATE
+cnbase1                 SUBSTRATE
+tpdiff_bjt              POD                     RPSQ=0.0000001
+tndiff_bjt              NOD                     RPSQ=0.0000001
+
+******* X-DEV mapping *******
+RH_TN                   RH_TN                   RPSQ=0.0000001
+rhim_r                  RH_TN
+
+mt1res                  M1
+mt2res                  M2
+mt3res                  M3
+mt4res                  M4
+mt5res                  M5
+mt6res                  M6
+mt7res                  M7
+mt8res                  M8
+mt9res                  M9
+mt10res                  M10
+mt11res                  M11
+mtAPres                 AP              **** move to remove layer if no RDL layer in RC techfiles
+
+via_layers
+nplug                   n_weltap
+pplug                   p_weltap
+VIA0_M0_OD_N            VIA0_M0_OD_N
+VIA0_M0_OD_P            VIA0_M0_OD_P
+VIA0_M0_STI             VIA0_M0_STI
+VIA0_M0_PO              VIA0_M0_PO  
+VIA0_M0_PO_TiN          VIA0_M0_PO_TiN
+n_odtap                 n_odtap
+n_odtap_bjt             n_odtap_bjt
+p_odtap                 p_odtap
+p_odtap_bjt             p_odtap_bjt            
+n_fptap_svt             n_fptap_svt
+n_fptap_lvt             n_fptap_lvt
+n_fptap_io              n_fptap_io
+p_fptap_svt             p_fptap_svt
+p_fptap_lvt             p_fptap_lvt
+p_fptap_io              p_fptap_io
+n_gptap_svt             n_gptap_svt
+n_gptap_lvt             n_gptap_lvt
+n_gptap_io              n_gptap_io
+p_gptap_svt             p_gptap_svt
+p_gptap_lvt             p_gptap_lvt
+p_gptap_io              p_gptap_io
+
+tintap                  tintap
+RV                      RV              **** move to remove layer if no RDL layer in RC techfiles
+VIA1                    VIA1
+VIA2                    VIA2
+VIA3                    VIA3
+VIA4                    VIA4
+VIA5                    VIA5
+VIA6                    VIA6
+VIA7                    VIA7
+VIA8                    VIA8
+VIA9                    VIA9
+VIA10                    VIA10
+
+remove_layers
+n_pplug
+fin_lay
+tiod_not_fin
+all_sd
+
+ignore_cap_layers
+n_gpoly_nocg_lvt    psub
+n_gpoly_nocg_lvt    nxwell
+p_gpoly_nocg_lvt    psub
+p_gpoly_nocg_lvt    nxwell
+n_gpoly_nocg_io     psub
+n_gpoly_nocg_io     nxwell
+p_gpoly_nocg_io     psub
+p_gpoly_nocg_io     nxwell
+tndiff_bjt psub
+tndiff_dio psub
+tpdiff_bjt nxwell
+tpdiff_dio nxwell
+n_odtap
+n_odtap_bjt
+p_odtap
+p_odtap_bjt
+n_fptap_svt
+n_fptap_lvt
+n_fptap_io
+p_fptap_svt
+p_fptap_lvt
+p_fptap_io
+n_gptap_svt
+n_gptap_lvt
+n_gptap_io
+p_gptap_svt
+p_gptap_lvt
+p_gptap_io
+tintap
+vargt_18        tndiff    nxwell
+
