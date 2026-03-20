@@ -67,6 +67,15 @@ Tools:
 - SPICE simulation
 
 ---
+### Layout
+![MAD32](MAD32.jpg)
+
+
+![RCA](RCA_laytout.jpg)
+
+
+![FA](FA_laytout.jpg)
+
 
 ### 4. 28T Mirror Full Adder Layout
 **Directory:** `28t-mirror-full-adder-layout`
