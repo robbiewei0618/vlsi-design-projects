@@ -79,7 +79,7 @@ This project implements a transistor-level layout of a **28-transistor mirror fu
 ![layout](28t-mirror-full-adder-layout.jpg)
 
 ### Schematic
-![Schematic](28t_mirror_full_adder_Schematic.jpg)
+![Schematic](mirror_full_adder_schematic.jpg)
 
 Key tasks include:
 - transistor-level schematic design
