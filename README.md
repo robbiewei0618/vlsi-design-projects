@@ -71,10 +71,10 @@ Tools:
 ![MAD32](MAD32.jpg)
 
 
-![RCA](RCA_laytout.jpg)
+![RCA](RCA_layout.jpg)
 
 
-![FA](FA_laytout.jpg)
+![FA](FA_layout.jpg)
 
 
 ### 4. 28T Mirror Full Adder Layout
