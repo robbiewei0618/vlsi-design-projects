@@ -73,6 +73,14 @@ Tools:
 
 This project implements a transistor-level layout of a **28-transistor mirror full adder**.
 
+## 28T Mirror Full Adder
+
+### Layout
+![layout](28t-mirror-full-adder-layout.jpg)
+
+### Schematic
+![Schematic](28t-mirror-full-adder-Schematic.jpg)
+
 Key tasks include:
 - transistor-level schematic design
 - layout implementation
@@ -112,5 +120,5 @@ Tools:
 ## Author
 
 **Robbie Wei**  
-Graduate Student, Computer Science  
+Computer Science  
 National Sun Yat-sen University
